@@ -19,4 +19,27 @@ Data is missing or inconsistent.
 The accuracy of the model is lower than the targeted value.
 
 Project Updates:
-To inform those who follow the project about updates every week.
+To inform those who follow the project about updates every week. 06 / 11 / 2023
+
+Updates of 27 / 11 / 2023
+
+As we begin the code-containing part of the project, we load our libraries.
+
+Then, we turn our data set into a dataframe so that we can use it in Google Collaborate.
+
+Since our data in our project belongs to the United States of America and we can make accurate future predictions, 
+we turn the inflation rate determined by state into a dataframe to add it to our target value as a result of noise.
+
+We use numpy arrays to process our State and InflationRate (IR) values from our dataset containing our inflation data.
+
+We carry out the normalization process in order to prevent deviation and possible misdirection in our inflation values.
+
+
+Then, in order to use the Linear Regression model, which is a machine learning method with which we can make our price prediction in the most ideal way,
+we take various attributes from our data set as numpy arrays to use.
+
+We apply our normalization processes to reduce misdirection in this data.
+
+Then, we match the states in our inflation data set with their inflation values, so we can change shoe prices depending on how much inflation there is in each state.
+
+We make price changes in our target value according to inflation values in the states.
