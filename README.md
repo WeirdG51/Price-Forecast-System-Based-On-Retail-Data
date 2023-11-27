@@ -1,3 +1,5 @@
+30 / 10 / 2023
+
 # Price-Forecast-System-Based-On-Retail-Data
 You can see the database from this connection which we will use for this project. 
 https://www.kaggle.com/datasets/sakhawatalilarik/adidas-us-sales-data
@@ -7,6 +9,8 @@ Project Name: Adidas Product Price Estimation.
 Project Purpose:  To develop a machine learning model to predict future prices of Adidas products in the United States.
 
 Project Goals:  Improving the accuracy of the model to be over 90%.
+
+06 / 11 / 2023
 
 Project scope:
 Collecting and pre-processing the data to be trained on the model.
@@ -19,7 +23,7 @@ Data is missing or inconsistent.
 The accuracy of the model is lower than the targeted value.
 
 Project Updates:
-To inform those who follow the project about updates every week. 06 / 11 / 2023
+To inform those who follow the project about updates every week. 
 
 Updates of 27 / 11 / 2023
 
