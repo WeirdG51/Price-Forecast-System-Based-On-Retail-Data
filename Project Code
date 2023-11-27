@@ -1,0 +1,55 @@
+Updating Date :  26 - 27 / 11 /2023
+
+#Importing Libraries
+import sklearn
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt  
+
+#Taking data from the excel file
+df = pd.read_excel("Adidas US Sales Datasets.xlsx")
+df1 = pd.read_excel("Inflation Rate Of States.xlsx")
+
+#Taking the values of states and IR
+StatesI = np.array(df1 ["State"])
+Avg_i_r = np.array( df1["AIR"])
+
+#Making value normalization and data type trasnformation
+for i in range(len(Avg_i_r)):
+  Avg_i_r[i] = Avg_i_r[i].replace("%", "")
+for i in range(len(Avg_i_r)):
+    Avg_i_r[i] = float(Avg_i_r[i])
+print(Avg_i_r)
+
+#Taking the values of the lineer regression fucntion's x
+States = np.array( df["State"])
+Units_Solds = np.array ( df["Units Sold"])
+Total_Sales = np.array ( df["Total Sales"])
+Price_per_Units = np.array( df["Price per Unit"])
+Cities = np.array( df["City"])
+
+#Making value normalization
+for i in range(len(Price_per_Units)):
+  Price_per_Units[i] = Price_per_Units[i].replace("$", "")
+
+#Making data type trasnformation
+for i in range(len(Price_per_Units)):
+    Price_per_Units[i] = float(Price_per_Units[i])
+print(Price_per_Units)
+
+#Matching States with it's IR
+States_IR = {}
+for i in range(len(StatesI)):
+  States_IR[StatesI[i]] = Avg_i_r[i]
+
+Price_per_Unit = np.array(Price_per_Units)
+
+# Applying inflation adjustment
+for i in range(len(States)):
+    state = States[i]
+    inflation_rate = States_IR.get(state, 0)  # Default to 0 if state not found
+    Price_per_Unit[i] *= (1 + inflation_rate/10)
+
+#New Target values  with inflations
+print(Price_per_Unit)
+
