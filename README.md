@@ -27,6 +27,10 @@ To inform those who follow the project about updates every week.
 
 Updates of 27 / 11 / 2023
 
+A New dataset link which we will be using on our project:
+
+https://1drv.ms/x/s!Aplzq74_6bixsSxfgWkHSNQ05N4-?e=8DAtm1
+
 As we begin the code-containing part of the project, we load our libraries.
 
 Then, we turn our data set into a dataframe so that we can use it in Google Collaborate.
